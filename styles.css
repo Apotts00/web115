@@ -8,11 +8,11 @@ body {
     text-align: left;
 }
 
-header p, h1, h2, ul, p, form, nav {
-    text-align: center;
+ul, p, nav {
+    text-align: left;
 }
 
-header p {
+header p, h1, h2 {
     color: white
 figure {
     display: center;
