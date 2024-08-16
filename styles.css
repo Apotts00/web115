@@ -35,6 +35,7 @@ ul {
 nav ul li {
     display: inline;
     margin-right: 100px;
+    text-align: center;
 }
 
 nav ul li a:hover::before { content: "\00ab"; }
