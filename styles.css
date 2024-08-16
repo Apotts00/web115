@@ -13,13 +13,18 @@ ul, p {
 }
 
 header p, h1, h2 {
-    color: white
+    color: white;
+   text-align:center;
+}
+
 figure {
     display: center;
 }
+
 head {
      text-align:center;
 }	
+
 ul {
     list-style-type: none;
     padding: 0;
