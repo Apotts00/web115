@@ -17,7 +17,9 @@ header p, h1, h2 {
 figure {
     display: center;
 }
-
+head {
+     text-align:center;
+}	
 ul {
     list-style-type: none;
     padding: 0;
@@ -71,7 +73,6 @@ input:focus:invalid, textarea:focus:invalid, select:focus:invalid {
     border: 2px solid red;
 }
 
-/* Include character references */
 footer {
     font-size: 100%;
     color: #B76E79;
