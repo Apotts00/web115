@@ -8,10 +8,6 @@ body {
     text-align: left;
 }
 
-ul, p {
-    text-align: left;
-}
-
 header, h1, h2 {
    text-align:center;
    font-size: 150%; 		
@@ -25,17 +21,18 @@ head {
      text-align:center;
 }	
 
-ul {
+ul, li, ol {
     list-style-type: none;
     padding: 0;
     color: #B76E79;
-	text-align: left;
+    text-align: left;
 }
 
 nav ul li {
     display: inline;
     margin-right: 100px;
     text-align: center;
+    color: #B76E79;	
 }
 
 nav ul li a:hover::before { content: "\00ab"; }
@@ -53,8 +50,8 @@ h2 {
 p {
     line-height: 1.6;
     font-size: 150%;
-    margin-right: 100px;
-    margin-left: auto;
+    margin-right: auto;
+    margin-left: 100px;
 }
 
 form {
