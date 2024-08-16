@@ -47,6 +47,8 @@ h2 {
 p {
     line-height: 1.6;
     font-size: 150%;
+    margin-right: 100px;
+    margin-left: auto;
 }
 
 form {
