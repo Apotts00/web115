@@ -8,7 +8,7 @@ body {
     text-align: left;
 }
 
-ul, p, nav {
+ul, p {
     text-align: left;
 }
 
@@ -62,15 +62,7 @@ a[href*="index.html"], a[href*="introduction.html"] {
 nav {
     font-size: 100%;
     display: block;
-}
-
-/* Use the focus pseudo class to format valid and invalid selected boxes */
-input:focus:valid, textarea:focus:valid, select:focus:valid {
-    border: 2px solid green;
-}
-
-input:focus:invalid, textarea:focus:invalid, select:focus:invalid {
-    border: 2px solid red;
+    text-align: center;
 }
 
 footer {
