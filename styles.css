@@ -12,8 +12,7 @@ ul, p {
     text-align: left;
 }
 
-header p, h1, h2 {
-    color: white;
+header, h1, h2 {
    text-align:center;
 }
 
