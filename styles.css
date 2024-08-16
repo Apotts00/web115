@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #B76E79;
+    margin: 0;
+    padding: 0;
+    font-size: 150%;
+    text-align: left;
+}
+
+header p, h1, h2, ul, p, form, nav {
+    text-align: center;
+}
+
+header p {
+    color: w
+figure {
+    display: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: #B76E79;
+	text-align: left;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;	
+}
+
+nav ul li a:hover::before { content: "\00ab"; }
+nav ul li a:hover::after { content: "\00bb"; }
+
+h1 {
+    color: #B76E79;
+    font-size: 350%;
+}
+
+h2 {
+    color: #B76E79;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 150%;
+}
+
+form {
+    color: #B76E79;
+}
+
+/* Use contextual/attribute selectors */
+a[href*="index.html"], a[href*="introduction.html"] {
+    color: white;
+}
+
+nav {
+    font-size: 100%;
+    display: block;
+}
+
+/* Use the focus pseudo class to format valid and invalid selected boxes */
+input:focus:valid, textarea:focus:valid, select:focus:valid {
+    border: 2px solid green;
+}
+
+input:focus:invalid, textarea:focus:invalid, select:focus:invalid {
+    border: 2px solid red;
+}
+
+/* Include character references */
+footer {
+    font-size: 100%;
+    color: #B76E79;
+    text-align: center;
+}
+
