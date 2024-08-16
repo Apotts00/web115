@@ -10,11 +10,11 @@ body {
 
 header, h1, h2 {
    text-align:center;
-   font-size: 150%; 		
+   font-size: 100%; 		
 }
 
 figure {
-    display: center;
+   align: center;
 }
 
 head {
@@ -35,9 +35,6 @@ nav ul li {
     color: #B76E79;	
 }
 
-nav ul li a:hover::before { content: "\00ab"; }
-nav ul li a:hover::after { content: "\00bb"; }
-
 h1 {
     color: #B76E79;
     font-size: 350%;
@@ -56,11 +53,6 @@ p {
 
 form {
     color: #B76E79;
-}
-
-/* Use contextual/attribute selectors */
-a[href*="index.html"], a[href*="introduction.html"] {
-    color: white;
 }
 
 nav {
