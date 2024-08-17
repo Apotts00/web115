@@ -18,7 +18,7 @@ head {
 }	
 
 ul, li, ol {
-    list-style-type: none;
+    list-style-type: disc;
     padding: 0;
     color: #B76E79;
     text-align: left;
