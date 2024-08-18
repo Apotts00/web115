@@ -17,8 +17,14 @@ head {
      text-align:center;
 }	
 
-ul, li, ol {
+ul, li, {
     list-style-type: disc;
+    padding: 0;
+    color: #B76E79;
+    text-align: left;
+}
+ol {
+    list-style-type: circle;
     padding: 0;
     color: #B76E79;
     text-align: left;
