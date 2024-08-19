@@ -26,7 +26,7 @@ nav ul li {
 }
 
 /* Handle overflow */
-img.responsive-img {
+.responsive-img {
     max-width: 100%;
     height: auto;
 }
