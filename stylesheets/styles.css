@@ -47,7 +47,7 @@ p {
     margin-left: 100px;
 }
 
-figure {
+figure, figcaption {
     text-align: center;
 }
 
