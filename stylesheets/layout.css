@@ -1,0 +1,45 @@
+/* Use both block and floating elements */
+header, section, footer {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background:black;
+}
+
+/* Create a grid layout */
+body {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+/* Experiment with relative and absolute positioning */
+nav {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #B76E79;
+}
+
+nav ul li {
+    float: center;
+}
+
+/* Handle overflow */
+img.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Implement responsive design to different screen widths using @media and flex/flexbox */
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin-bottom: 10px;
+        float: none;
+    }
+}
