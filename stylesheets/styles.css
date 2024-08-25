@@ -4,49 +4,61 @@ body {
     color: #5271FF;
     margin: 100px;
     padding: 0;
-    font-size: 125%;
-    text-align: left;
+    font-size: 100%;
+    text-align: center;
 }
 
 header, h1, h2 {
    text-align:center;
-   font-size: 125%; 
-    color: #ff33a5;
-    font-family: Adigiana Toybox;
+   font-size: 50px; 
+   color: #FF3131;
+   font-family: Adigiana Toybox;
 }
 
 head {
      text-align:center;
     font-size: 100%; 
 }	
+path {
+  fill: transparent;
+}
+
+text {
+  fill: #5271FF;
+}
 
 ul, li {
     list-style-type: disc;
     padding: 0;
-    color: #ff33a5;
+    color:#5271FF;
     text-align: left;
+	margin-left: 50px;
+	
 }
 
 ol li {
     list-style-type: circle;
     padding: 0;
-    color: #ff33a5;
-    text-align: left;
+    color: #5271FF;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
     margin-right: 100px;
     text-align: center;
-    color: #ff33a5;	
+    color: black;	
 }
 
 p {
-    line-height: 1.6;
+    text-align: center;
     font-size: 150%;
     margin-right: auto;
     margin-left: 100px;
 }
+p em {
+	text-align: center;
+}	
 
 figure, figcaption {
     text-align: center;
@@ -56,10 +68,11 @@ nav a href {
     font-size: 100%;
     display: block;
     text-align: center;
-    color: white;
+    color: #F2BC2A;
 }
 
-{
+nav {
+	font-size: 100%;
 	text-align: center;
 	color: #5271FF;
 	box-shadow:0 0 10px 5px #c353f4;
@@ -74,6 +87,6 @@ a {
 
 footer {
     font-size: 100%;
-    color: #ff33a5;
+    color: #5271FF;
     text-align: center;
 }
