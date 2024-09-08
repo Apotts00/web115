@@ -1,0 +1,192 @@
+// Adrienne Potts code play 
+console.log(5 + 3); // 8
+console.log(10 - 4); // 6
+console.log(6 * 7); // 42
+console.log(20 / 4); // 5
+console.log(7 % 3); // 1
+
+
+console.log(2 ** 3); // 8
+console.log((5 + 3) * 2); // 16
+console.log(10 / (2 + 3)); // 2
+
+console.log('Hello, ' + 'world!'); // Hello, world!
+console.log('The sum of 2 and 3 is ' + (2 + 3)); // The sum of 2 and 3 is 5
+
+let name = 'Adrienne';
+console.log(`Hello, ${name}!`); // Hello, Adrienne!
+let age = 25;
+console.log(`You are ${age} years old.`); // You are 25 years old.
+
+let x = 10;
+console.log(x); // 10
+x = 15;
+console.log(x); // 15
+
+const y = 20;
+console.log(y); // 20
+
+
+let str = 'JavaScript';
+console.log(str.length); // 10
+console.log(str.toUpperCase()); // JAVASCRIPT
+console.log(str.toLowerCase()); // javascript
+console.log(str.indexOf('Script')); // 4
+console.log(str.slice(4, 10)); // Script
+
+
+let arr = [1, 2, 3, 4];
+console.log(arr.length); // 4
+arr.push(5);
+console.log(arr); // [1, 2, 3, 4, 5]
+console.log(arr.pop()); // 5
+console.log(arr); // [1, 2, 3, 4]
+console.log(arr.shift()); // 1
+console.log(arr); // [2, 3, 4]
+console.log(arr.unshift(1)); // 4 (new length)
+console.log(arr); // [1, 2, 3, 4]
+
+
+let person = { name: 'John', age: 30 };
+console.log(person.name); // John
+console.log(person['age']); // 30
+person.age = 31;
+console.log(person.age); // 31
+
+
+let num = 10;
+if (num > 5) {
+    console.log('Greater than 5'); // Greater than 5
+} else {
+    console.log('5 or less');
+}
+
+
+let day = 2;
+switch (day) {
+    case 1:
+        console.log('Monday');
+        break;
+    case 2:
+        console.log('Tuesday'); // Tuesday
+        break;
+    default:
+        console.log('Other day');
+}
+
+
+for (let i = 0; i < 5; i++) {
+    console.log(i); // 0 1 2 3 4
+}
+
+
+let i = 0;
+while (i < 5) {
+    console.log(i); // 0 1 2 3 4
+    i++;
+}
+
+
+let j = 0;
+do {
+    console.log(j); // 0 1 2 3 4
+    j++;
+} while (j < 5);
+
+
+function add(a, b) {
+    return a + b;
+}
+console.log(add(2, 3)); // 5
+
+const multiply = (a, b) => a * b;
+console.log(multiply(4, 5)); // 20
+
+
+let undeclaredVar = 'Now I am defined';
+console.log(undeclaredVar); // Now I am defined
+
+// Error Example: TypeError
+let num = 10;
+// console.log(num.toUpperCase()); // Error: num.toUpperCase is not a function
+
+// Fixing TypeError
+let str = 'hello';
+console.log(str.toUpperCase()); // HELLO
+
+// Error Example: ReferenceError
+// console.log(nonExistentFunction()); // Error: nonExistentFunction is not defined
+
+// Fixing ReferenceError
+function nonExistentFunction() {
+    return 'Function exists now';
+}
+console.log(nonExistentFunction()); // Function exists now
+
+// Error Example: SyntaxError
+// let message = 'Hello, world!; // Error: Unterminated string literal
+
+// Fixing SyntaxError
+let message = 'Hello, world!';
+console.log(message); // Hello, world!
+
+// Error Example: RangeError
+// let arr = new Array(-1); // Error: Invalid array length
+
+let arr = new Array(10); // Creates an array of length 10
+console.log(arr.length); // 10
+
+
+let fruits = ['apple', 'banana', 'cherry'];
+console.log(fruits.includes('banana')); // true
+console.log(fruits.includes('grape')); // false
+
+
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let combined = arr1.concat(arr2);
+console.log(combined); // [1, 2, 3, 4, 5, 6]
+
+
+let [first, second] = [1, 2, 3];
+console.log(first); // 1
+console.log(second); // 2
+
+
+let person = { name: 'Alice', age: 25 };
+let { name, age } = person;
+console.log(name); // Alice
+console.log(age); // 25
+
+
+let arr = [1, 2, 3];
+let arr2 = [...arr, 4, 5];
+console.log(arr2); // [1, 2, 3, 4, 5]
+
+
+function sum(...args) {
+    return args.reduce((acc, curr) => acc + curr, 0);
+}
+console.log(sum(1, 2, 3, 4)); // 10
+
+
+let greet = name => `Hello, ${name}!`;
+console.log(greet('Jason')); // Hello, Jason!
+
+
+function greet(name = 'Guest') {
+    return `Hello, ${name}!`;
+}
+console.log(greet()); // Hello, Guest!
+console.log(greet('Alice')); // Hello, Adrienne!
+
+
+async function fetchData() {
+    return 'Data fetched';
+}
+fetchData().then(data => console.log(data)); // Data fetched
+
+let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Promise resolved'), 1000);
+});
+promise.then(result => console.log(result)); // Promise resolved
