@@ -33,7 +33,4 @@ document.getElementById("name-form").addEventListener("submit", function(event) 
         }
     }
 
-    // Display results
-    document.getElementById("output").innerHTML = numberOutput;
-});
-});
+   
