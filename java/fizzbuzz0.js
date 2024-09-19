@@ -32,5 +32,3 @@ document.getElementById("name-form").addEventListener("submit", function(event) 
             numberOutput += `${i}. Happy Hour Drinks - This number is Odd<br>`;
         }
     }
-
-   
