@@ -2,7 +2,7 @@
 header, section, footer {
     display: block;
     margin: 10px;
-    padding: 10px;
+    padding: 3px;
     background:#65058F;
 }
 
@@ -10,7 +10,7 @@ header, section, footer {
 body {
     display: grid;
     grid-template-rows: auto auto;
-    gap: 10px;
+    gap: 8px;
 }
 
 /* Experiment with relative and absolute positioning */
