@@ -42,28 +42,6 @@
 
     <div class="message-list" id="message-list"></div>
 
-    <script>
-        document.getElementById('user-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevents form from submitting in the traditional way
-
-            // Retrieve user inputs
-            const firstName = document.getElementById('first_name').value;
-            const middleInitial = document.getElementById('middle_initial').value;
-            const lastName = document.getElementById('last_name').value;
-
-            // Create the new greeting
-            const fullGreeting = `Welcome to Forever Friends ${firstName} ${middleInitial ? middleInitial + '. ' : ''}${lastName}!`;
-
-            // Update the greeting on the page
-            document.getElementById('greeting').innerText = fullGreeting;
-
-            // Generate and display the list of messages
-            let messageListHtml = '';
-            for (let i = 1; i <= 125; i++) {
-                messageListHtml += `<p>${i}. Fun Play</p>`;
-            }
-            document.getElementById('message-list').innerHTML = messageListHtml;
-        });
-    </script>
+    
 </body>
 </html>
