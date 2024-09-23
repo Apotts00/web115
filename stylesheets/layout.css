@@ -2,8 +2,8 @@
 header, section, footer {
     display: block;
     margin: 5px;
-    padding: 3px;
-    background:#65058F;
+    padding: 0px;
+    background:#550578;
 }
 
 /* Create a grid layout */
@@ -17,7 +17,7 @@ nav {
     position: relative;
     top: 0;
     width: 100%;
-    background-color: #65058F;
+    background-color: #550578;
 }
 
 nav ul li {
