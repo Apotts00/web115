@@ -29,7 +29,7 @@ head {
 ul, li {
     list-style-type: disc;
     padding: 0;
-    color:#5271FF;
+    color:##21dcd9;
     text-align: left;
 	
 }
@@ -37,7 +37,7 @@ ul, li {
 ol li {
     list-style-type: circle;
     padding: 0;
-    color: #5271FF;
+    color: ##21dcd9;
     text-align: left;
 }
 
@@ -74,7 +74,7 @@ nav a href {
 nav {
 	font-size: 100%;
 	text-align: center;
-	color: #5271FF;
+	color: ##21dcd9;
 	box-shadow:0 0 10px 5px #c353f4;
 	border-radius: 30px;
 	padding: 3ch 3ch;
@@ -87,6 +87,6 @@ a {
 
 footer {
     font-size: 100%;
-    color: #5271FF;
+    color: ##21dcd9;
     text-align: center;
 }
