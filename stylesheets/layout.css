@@ -1,7 +1,7 @@
 /* Use both block and floating elements */
 header, section, footer {
     display: block;
-    margin: 10px;
+    margin: 5px;
     padding: 3px;
     background:#65058F;
 }
