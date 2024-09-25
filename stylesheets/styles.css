@@ -31,7 +31,7 @@ ul, li {
     padding: 0;
     color:#21dcd9;
     text-align: left;
-	
+    font-size: 150%;	
 }
 
 ol li {
@@ -39,6 +39,7 @@ ol li {
     padding: 0;
     color: #21dcd9;
     text-align: left;
+    font-size: 150%;
 }
 
 nav ul li {
