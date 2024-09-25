@@ -7,13 +7,6 @@ header, section, footer {
     margin: 0 0 50px 10px;
 }
 
-/* Create a grid layout */
-body {
-    display: grid;
-    grid-template-rows: auto auto 1fr; /* Adjusted for flexibility */
-    grid-template-columns: 1fr;
-    gap: 5px; /* Adds spacing between elements */
-}
 
 /* Experiment with relative and absolute positioning */
 nav {
