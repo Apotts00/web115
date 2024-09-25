@@ -4,7 +4,7 @@ header, section, footer {
     padding: 3ch;
     background: #550578;
     color: white; 
-    margin: 5px 5px 50px 10px;
+    margin: 0 0 50px 10px;
 }
 
 /* Create a grid layout */
