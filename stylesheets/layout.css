@@ -3,7 +3,8 @@ header, section, footer {
     display: block;
     padding: 3ch;
     background: #550578;
-    color: white; /* Added for better text visibility */
+    color: white; 
+    margin: 5px 50px 50px 10px;
 }
 
 /* Create a grid layout */
