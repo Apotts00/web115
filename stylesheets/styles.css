@@ -31,7 +31,7 @@ ul, li {
     padding: 0;
     color:#21dcd9;
     text-align: left;
-    font-size: 100%;	
+    font-size: 20px;	
 }
 
 ol li {
@@ -39,7 +39,7 @@ ol li {
     padding: 0;
     color: #21dcd9;
     text-align: left;
-    font-size: 100%;
+    font-size: 20px;
 }
 
 nav ul li {
@@ -64,7 +64,7 @@ figure, figcaption {
 }
 
 nav a href {
-    font-size: 30px;
+    font-size: 25px;
     display: block;
     text-align: center;
     color: #F2BC2A;
@@ -72,7 +72,7 @@ nav a href {
 }
 
 nav {
-	font-size: 30px;
+	font-size: 25px;
 	text-align: center;
 	color: #21dcd9;
 	box-shadow:0 0 10px 5px #c353f4;
@@ -93,7 +93,7 @@ img {
 }
 
 footer {
-    font-size: 30px;
+    font-size: 25px;
     color: #21dcd9;
     text-align: center;
 }
