@@ -1,14 +1,17 @@
 /* Use both block and floating elements */
 header, section, footer {
-    display: inline-block;
+    display: block;
     padding: 3ch;
-    background:#550578;
+    background: #550578;
+    color: white; /* Added for better text visibility */
 }
 
 /* Create a grid layout */
 body {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto 1fr; /* Adjusted for flexibility */
+    grid-template-columns: 1fr;
+    gap: 10px; /* Adds spacing between elements */
 }
 
 /* Experiment with relative and absolute positioning */
@@ -19,8 +22,16 @@ nav {
     background-color: #550578;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the nav items horizontally */
+}
+
 nav ul li {
-    float: center;
+    margin: 0 15px; /* Space between items */
 }
 
 /* Handle overflow */
@@ -29,15 +40,14 @@ nav ul li {
     height: auto;
 }
 
-/* Implement responsive design to different screen widths using @media and flex/flexbox */
+/* Implement responsive design using @media and flex/flexbox */
 @media (max-width: 600px) {
     nav ul {
-        display: flex;
         flex-direction: column;
+        align-items: center;
     }
     
     nav ul li {
         margin-bottom: 10px;
-        float: none;
     }
 }
