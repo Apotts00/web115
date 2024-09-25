@@ -10,13 +10,14 @@ body {
 
 h1 {
    text-align:center;
-   font-size: 50px; 
+   font-size: 40px; 
    color: #21dcd9;
    font-family: Adigiana Toybox;
+   margin-top: 5px;
 }
 h2 {
    text-align:center;
-   font-size: 45px; 
+   font-size: 35px; 
    color: #ffffff;
    font-family: Adigiana Toybox;
 }
