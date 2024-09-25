@@ -12,7 +12,7 @@ body {
     display: grid;
     grid-template-rows: auto auto 1fr; /* Adjusted for flexibility */
     grid-template-columns: 1fr;
-    gap: 10px; /* Adds spacing between elements */
+    gap: 5px; /* Adds spacing between elements */
 }
 
 /* Experiment with relative and absolute positioning */
