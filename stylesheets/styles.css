@@ -63,7 +63,7 @@ figure, figcaption {
 }
 
 nav a href {
-    font-size: 20px;
+    font-size: 50px;
     display: block;
     text-align: center;
     color: #F2BC2A;
@@ -71,7 +71,7 @@ nav a href {
 }
 
 nav {
-	font-size: 20px;
+	font-size: 50px;
 	text-align: center;
 	color: #21dcd9;
 	box-shadow:0 0 10px 5px #c353f4;
