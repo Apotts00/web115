@@ -77,7 +77,7 @@ nav {
 	color: #21dcd9;
 	box-shadow:0 0 10px 5px #c353f4;
 	border-radius: 25px;
-	padding: 3ch 3ch;
+	padding: 4ch 4ch;
 	text-decoration:none;
 }
 
@@ -93,7 +93,7 @@ img {
 }
 
 footer {
-    font-size: 25px;
+    font-size: 15px;
     color: #21dcd9;
     text-align: center;
 }
