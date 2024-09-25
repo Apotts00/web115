@@ -2,7 +2,7 @@
 header, section, footer {
     display: block;
     margin: 5px;
-    padding: 0px;
+    padding: 3ch;
     background:#550578;
 }
 
