@@ -85,7 +85,7 @@ nav {
 	margin: 0 0 50px 10px;
 }
 
-nav:hover{
+a:hover{
 	background-color: blue;
 }
 
