@@ -86,6 +86,7 @@ nav {
 	padding: 7px;
 	text-decoration:none;
 	margin: 0 0 50px 10px;
+	max-width: 50%;
 }
 
 a:hover {
