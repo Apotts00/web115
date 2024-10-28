@@ -53,10 +53,11 @@ ol li {
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 100px;
-    text-align: center;
-    color: black;
+	display: inline;
+	margin-right: 100px;
+	text-align: center;
+	color: black;
+	margin:  0 50px 50px 50px;
 }
 
 p {
