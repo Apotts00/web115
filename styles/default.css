@@ -47,7 +47,8 @@ p em {
 	text-align: center; 
 }	 
 
-img { 
+figure, figcaption { 
 	height: auto; 
 	max-width: 50%; 
+	text-align: center;
 } 
