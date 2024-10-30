@@ -17,3 +17,6 @@ header, footer {
 a:hover { 
 	background-color: blue; 
 } 
+h2 {
+	text-align: center;	
+}
