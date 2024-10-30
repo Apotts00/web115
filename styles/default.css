@@ -1,1 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #550578;
+    color: #21dcd9;
+    margin:  0 50px 50px 50px;
+    padding: 0;
+    font-size: 100%;
+    text-align: left;
+}
 
+header, footer {
+    text-align: center;
+    font-size: 15px; 
+    color: #21dcd9; 
+}
+
+a:hover { 
+	background-color: blue; 
+} 
+h2 {
+	text-align: center;	
+}
