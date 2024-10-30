@@ -52,3 +52,15 @@ figure, figcaption {
 	max-width: 50%; 
 	text-align: center;
 } 
+
+nav { 
+	font-size: 25px; 
+	text-align: center; 
+	color: #21dcd9; 
+	box-shadow:0 0 5px 3px #c353f4; 
+	border-radius: 15px; 
+	padding: 7px; 
+	text-decoration: none; 
+	max-width: 50%; 
+
+} 
