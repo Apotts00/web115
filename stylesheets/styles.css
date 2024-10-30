@@ -8,3 +8,12 @@ body {
     text-align: left;
 }
 
+header footer {
+    text-align: center;
+    font-size: 15px; 
+    color: #21dcd9; 
+}
+
+a:hover { 
+	background-color: blue; 
+} 
