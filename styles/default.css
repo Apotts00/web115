@@ -59,8 +59,10 @@ nav {
 	box-shadow:0 0 5px 3px #c353f4; 
 	border-radius: 15px; 
 	padding: 7px; 
-	text-decoration: none; 
 	display: block; 
-	color: #F2BC2A; 
-
 } 
+
+a href {
+	color: #F2BC2A; 
+	text-decoration: none;
+}
