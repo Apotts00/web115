@@ -1,38 +1,46 @@
-document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("name-form").addEventListener("submit", function(event) {
     event.preventDefault();
-    
-    // Collecting user inputs
-    const firstName = document.getElementById("first-name").value;
-    const middleInitial = document.getElementById("middle-initial").value;
-    const lastName = document.getElementById("last-name").value;
 
-    // Create full name
-    const fullName = `${firstName} ${middleInitial ? middleInitial + "." : ""} ${lastName}`.trim();
-
-    // Update the welcome message
-    document.getElementById("welcome-message").innerText = `Welcome to Forever Friends Soft Play, ${fullName}!`;
-    
-    // Prompt the user to enter a number between 1 and 125
-    let numberInput = prompt(`How high do you want to count, ${firstName} ?`);
-
-    // Validate the number input
-    while (numberInput < 1 || numberInput > 125 || isNaN(numberInput)) {
-        numberInput = prompt("Invalid input. Please enter a number between 1 and 125:");
+    let firstName = document.getElementById("first-name").value.trim();
+    let middleInitial = document.getElementById("middle-initial").value.trim();
+    let lastName = document.getElementById("last-name").value.trim();
+    const outputBox = document.getElementById("fizzbuzz-output-box");
+ 
+    if (!firstName || !lastName) {
+        alert("First Name and Last Name are required!");
+        return;
     }
-    
-    // Logic for the number input
-    let numberOutput = "";
-    
-    for (let i = 1; i <= numberInput; i++) {
+
+
+    let greetingMessage = `Welcome to Jumpy Tarantula, ${firstName} ${middleInitial ? middleInitial + "." : ""} ${lastName}!`;
+    document.getElementById("greeting").innerText = greetingMessage;
+
+
+    function generateFizzBuzz() {
+        // First, make the output box visible
+        outputBox.style.display = "block";
         
-        if (i % 2 === 0) {
-            numberOutput += `${i}. Happy Hour Drinks - This number is Even<br>`;
-        } else {
-            numberOutput += `${i}. Happy Hour Drinks - This number is Odd<br>`;
-        }
+        // Clear any existing content
+        outputBox.innerHTML = "";
+        
+        // Create an ordered list to hold the fizzbuzz items
+        const fizzBuzzList = document.createElement("ul");
+        fizzBuzzList.id = "fizz-buzz-list";
+    
+    for (let i = 1; i <= 125; i++) {
+        let listItem = document.createElement("li");
+        let result = " Forever Friends Soft Play";
+
+        if (result === "") result = i;
+
+       
+        listItem.innerHTML = `<span class="fizzbuzz-number">${i}.</span>${result}`;
+        fizzBuzzList.appendChild(listItem);
     }
-// Display results
-    document.getElementById("output").innerHTML = numberOutput;
-});
+    
+
+    outputBox.appendChild(fizzBuzzList);
+}
+
+generateFizzBuzz();
 });
