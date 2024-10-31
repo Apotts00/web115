@@ -50,13 +50,11 @@ p em {
 	text-align: center; 
 }	 
 
-figcaption { 
-	height: auto; 
-	max-width: 50%; 
+figcaption {  
 	text-align: center;
 	margin-right: 100px; 
 	margin-left: 100px;
-	position:absolute;
+	position: static;
 	font-style: italic;
 } 
 
@@ -76,8 +74,9 @@ a {
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+	height: auto;
+	display: block;
+  	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
