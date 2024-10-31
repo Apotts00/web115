@@ -12,7 +12,7 @@ document.getElementById("name-form").addEventListener("submit", function(event) 
     }
 
 
-    let greetingMessage = `Welcome to Jumpy Tarantula, ${firstName} ${middleInitial ? middleInitial + "." : ""} ${lastName}!`;
+    let greetingMessage = `Welcome to Forever Friends Soft Play, ${firstName} ${middleInitial ? middleInitial + "." : ""} ${lastName}!`;
     document.getElementById("greeting").innerText = greetingMessage;
 
 
