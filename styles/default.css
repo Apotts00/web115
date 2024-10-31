@@ -50,7 +50,7 @@ p em {
 	text-align: center; 
 }	 
 
-figure, figcaption { 
+img, figcaption { 
 	height: auto; 
 	max-width: 50%; 
 	text-align: center;
