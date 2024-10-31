@@ -13,7 +13,7 @@ header, footer {
 	font-size: 15px; 
 	display: block; 
 	color: white; 
-	text-decoration:none;
+	text-decoration: none;
 }
 
 a:hover { 
@@ -23,7 +23,7 @@ a:hover {
 
 h1 {
 	color: #21dcd9;
-	font-size: 40px; 
+	font-size: 45px; 
 }
 
 h2 {
@@ -33,9 +33,11 @@ h2 {
 }
 
 ul, li { 
-    list-style-type: disc; 
-    padding: 0; 
-    font-size: 20px;	 
+	list-style-type: disc; 
+	padding: 0; 
+	font-size: 20px;
+	margin-right: 100px; 
+	margin-left: 100px; 
 } 
 
 p { 
@@ -65,6 +67,6 @@ nav {
 } 
 
 a href {
-	color: white; 
+	color: #ffffff; 
 	text-decoration: none;
 }
