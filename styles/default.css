@@ -10,14 +10,15 @@ body {
 
 header, footer {
     	text-align: center;
-	font-size: 25px; 
+	font-size: 15px; 
 	display: block; 
-	color: #F2BC2A; 
+	color: white; 
 	text-decoration:none;
 }
 
 a:hover { 
 	background-color: blue; 
+	color: white;
 } 
 
 h1 {
