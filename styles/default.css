@@ -63,9 +63,7 @@ nav {
 	border-radius: 15px; 
 	padding: 7px; 
 	display: block; 
-	min-width: 100px;
-	color: #ffffff; 
-	text-decoration: none;
+	min-width: 50px;
 } 
 
 a {
