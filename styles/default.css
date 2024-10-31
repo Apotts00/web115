@@ -63,7 +63,9 @@ nav {
 	border-radius: 15px; 
 	padding: 7px; 
 	display: block; 
-	min-width: none
+	min-width: none;
+	color: #ffffff; 
+	text-decoration: none;
 } 
 
 a href {
