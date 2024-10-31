@@ -50,12 +50,13 @@ p em {
 	text-align: center; 
 }	 
 
-img, figcaption { 
+.main img, figcaption { 
 	height: auto; 
 	max-width: 50%; 
 	text-align: center;
 	margin-right: 100px; 
 	margin-left: 100px;
+	position:absolute;
 } 
 
 nav { 
