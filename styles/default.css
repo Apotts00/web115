@@ -50,13 +50,14 @@ p em {
 	text-align: center; 
 }	 
 
-.main img, figcaption { 
+figcaption { 
 	height: auto; 
 	max-width: 50%; 
 	text-align: center;
 	margin-right: 100px; 
 	margin-left: 100px;
 	position:absolute;
+	font-style: italic;
 } 
 
 nav { 
@@ -72,4 +73,11 @@ nav {
 a {
 	color: #ffffff; 
 	text-decoration: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
