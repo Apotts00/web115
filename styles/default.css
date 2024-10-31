@@ -54,6 +54,8 @@ figure, figcaption {
 	height: auto; 
 	max-width: 50%; 
 	text-align: center;
+	margin-right: 100px; 
+	margin-left: 100px;
 } 
 
 nav { 
