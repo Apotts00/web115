@@ -9,6 +9,8 @@ document.getElementById("form").onsubmit = function greetUser(submit) {
     const firstName = document.getElementById("first-name").value;
     const middleInitial = document.getElementById("middle-initial").value;
     const lastName = document.getElementById("last-name").value;
+    const greeting = document.getElementById("greeting");
+    const loop = document.getElementById("loop");
 
     if (!firstName || !lastName) {
         return;
