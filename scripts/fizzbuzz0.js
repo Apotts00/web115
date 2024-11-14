@@ -1,47 +1,42 @@
-document.getElementById("reset").onclick = function reset() {
-    document.getElementById("greeting").textContent = "Let's go again!";
-    document.getElementById("output").textContent = '';
-};
+const form = document.getElementById("name-form");
 
-document.getElementById("form").onsubmit = function greetUser(submit) {
-    submit.preventDefault();
+form.addEventListener("submit", function (event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
 
     const firstName = document.getElementById("first-name").value;
     const middleInitial = document.getElementById("middle-initial").value;
     const lastName = document.getElementById("last-name").value;
     const greeting = document.getElementById("greeting");
-    const loop = document.getElementById("loop");
+    const loopList = document.getElementById("loop-list");
 
+    // Validate that the user has entered a name
     if (!firstName || !lastName) {
         alert("Please enter your first and last name.");
         return;
     }
 
-    let count;
-    while (true) {
-        count = prompt(`How high do you want to count, ${firstName}?`);
-        if (count === null) return;
-        count = Number(count);
-        if (!isNaN(count) && count > 0) break;
+    // Reset the greeting and clear the list
+    greeting.textContent = "Welcome to Forever Friends Soft Play.";
+    loopList.innerHTML = "";  // Clears previous list items
+
+    // Update the greeting with the user's name
+    greeting.textContent = `${greeting.textContent} ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}!`.replace(/\s+/g, " ").trim();
+
+    // Prompt user for count
+    const count = parseInt(prompt(`How high do you want to count, ${firstName}?`), 10);
+    if (isNaN(count) || count <= 0) {
         alert("Please enter a valid positive number.");
+        return;
     }
-    
-    const fullName = middleInitial ? `${firstName} ${middleInitial}. ${lastName}` : `${firstName} ${lastName}`;
-    
-    const greetingElement = document.getElementById("greeting");
-    greetingElement.textContent = `Welcome to Forever Friends, ${fullName}!`;
 
-
-
-    const outputList = document.getElementById("output");
-    outputList.textContent = "";
-
+    // Generate the counting output
     for (let x = 1; x <= count; x++) {
         // Create a new list item
         const listItem = document.createElement("li");
         listItem.textContent = `Forever Friend - ${x % 2 === 0 ? "the number is even" : "the number is odd"}`;
 
-        
-        outputList.appendChild(listItem); 
+        // Append the list item to the loop list
+        loopList.appendChild(listItem);
     }
-};
+});
