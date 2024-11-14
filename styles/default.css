@@ -32,6 +32,11 @@ h2 {
 	color: #ffffff;
 }
 
+h3 {
+	text-align: center;	
+	font-size: 30px; 
+	color: #ffffff;
+}
 ul, li { 
 	list-style-type: disc; 
 	padding: 0; 
@@ -101,5 +106,6 @@ form {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	width: 80%;
 	margin: auto;
 }
