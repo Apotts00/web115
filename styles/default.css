@@ -96,10 +96,10 @@ a {
     width: 35ch;
     text-align: left;
 }
+
 form {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	max-width: 800px;
 	margin: auto;
 }
