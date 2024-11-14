@@ -20,30 +20,26 @@
   </nav>
 </header>
 
-<main>
-    <h2>Fizz Buzz 0</h2>
-	<h3 id="greeting">Welcome to Forever Friends Soft Play</h3>
-    <form id="user-form">
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" placeholder="Enter your First name here" required="required"><br><br>
-
-        <label for="middle-initial">Middle Initial:</label>
-        <input type="text" id="middle-initial" placeholder="Enter your Middle Initial here" maxlength="1"><br><br>
-
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" placeholder="Enter your Last name here" required="required"><br><br>
-
-        <button type="submit">Submit</button>
-    </form>
-
-    <div class="message-list" id="message-list"></div>
-	<h3>Fizz Buzz Sequence:</h3>
-<div id="output">
-    <div id="fizzbuzz-output-box">
-        <ul id="fizz-buzz-list"></ul>
-    </div>
-</div>
-</main>	
+	<main>
+			<h2>Fizz Buzz 0</h2>
+			<h3 id="greeting">Welcome to Forever Friends Soft Play</h3>
+			<form id="form">
+				<fieldset class="name">
+					<legend>Please enter your name.</legend>
+					<label for="first-name">First Name</label>
+					<input id="first-name" placeholder=" First Name" required>
+					<label for="middle-initial">Middle Initial</label>
+					<input id="middle-initial" placeholder=" Middle Initial" maxlength="1" >
+					<label for="last-name">Last Name</label>
+					<input id="last-name" placeholder=" Last Name" required>
+					<div class="buttons">
+						<button id="submit" type="submit">Submit</button>
+						<button id="reset" type="reset">Reset</button>
+					</div>
+				</fieldset>
+			</form>
+			<ul class="fizzbuzz-style1" id="output"></ul>
+		</main>
 <footer>
 	<nav>
     <a href="https://github.com/Apotts00">GitHub</a>&nbsp;
