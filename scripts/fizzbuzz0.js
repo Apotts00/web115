@@ -13,6 +13,7 @@ document.getElementById("form").onsubmit = function greetUser(submit) {
     const loop = document.getElementById("loop");
 
     if (!firstName || !lastName) {
+        alert("Please enter your first and last name.");
         return;
     }
 
@@ -35,10 +36,12 @@ document.getElementById("form").onsubmit = function greetUser(submit) {
     const outputList = document.getElementById("output");
     outputList.textContent = "";
 
-    for (let i = 1; i <= count; i++) {
+    for (let x = 1; x <= count; x++) {
+        // Create a new list item
         const listItem = document.createElement("li");
-        const oddEvenText = i % 2 === 0 ? "The number is even" : "The number is odd";
-        listItem.textContent = `${i}. Bazoom Bazang - ${oddEvenText}`;
+        listItem.textContent = `Forever Friend - ${x % 2 === 0 ? "the number is even" : "the number is odd"}`;
+
+        
         outputList.appendChild(listItem); 
     }
 };
