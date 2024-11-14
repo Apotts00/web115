@@ -26,7 +26,7 @@ document.getElementById("form").onsubmit = function greetUser(submit) {
     const fullName = middleInitial ? `${firstName} ${middleInitial}. ${lastName}` : `${firstName} ${lastName}`;
     
     const greetingElement = document.getElementById("greeting");
-    greetingElement.textContent = `Welcome to Fizz Buzz, ${fullName}!`;
+    greetingElement.textContent = `Welcome to Forever Friends, ${fullName}!`;
 
 
 
