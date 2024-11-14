@@ -92,7 +92,14 @@ a {
 	margin: auto;
 	color: #c5ffff;
 }
-.loop li {
+.loop ul {
     width: 35ch;
     text-align: left;
+}
+form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 800px;
+	margin: auto;
 }
