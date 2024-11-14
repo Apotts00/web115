@@ -29,8 +29,4 @@ navLinks.forEach((link) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-Promise.all([
-    components('components/header.html', 'header'),
-    components('components/footer.html', 'footer')
-]).then(currentpage);
 });
