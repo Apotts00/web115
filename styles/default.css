@@ -81,3 +81,18 @@ a {
 	margin-right: auto;
 	max-width: 50%;
 }
+
+#output {
+	list-style-type: none;
+	padding: 2ch 1.5ch 0;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	max-width: 800px;
+	margin: auto;
+	color: #c5ffff;
+}
+.fizzbuzz-style1 li {
+    width: 35ch;
+    text-align: left;
+}
