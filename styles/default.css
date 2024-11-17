@@ -111,3 +111,15 @@ form {
 	margin-right: 100px; 
 	margin-left: 100px;
 }
+
+header .logo h3 {
+  float: left;
+  margin: 0; 
+  padding: 0; 
+}
+
+header .logo img {
+  max-height: 50px; 
+  width: auto; 
+}
+
