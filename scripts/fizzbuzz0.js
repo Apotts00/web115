@@ -1,4 +1,10 @@
-const form = document.getElementById("form");
+document.getElementById("reset").onclick = function reset() {
+    document.getElementById("greeting").textContent = "Let's play again!";
+    document.getElementById("output").textContent = '';
+};
+
+document.getElementById("form").onsubmit = function greetUser(submit) {
+    submit.preventDefault();
 
 form.addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the default form submission behavior
