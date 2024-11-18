@@ -8,7 +8,7 @@ form.addEventListener("submit", function (event) {
     const middleInitial = document.getElementById("middle-initial").value;
     const lastName = document.getElementById("last-name").value;
     const greeting = document.getElementById("greeting");
-    const loopList = document.getElementById("loop-list");
+    const loopList = document.getElementById("output");
 
     // Validate that the user has entered a name
     if (!firstName || !lastName) {
