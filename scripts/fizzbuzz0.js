@@ -1,11 +1,5 @@
-document.getElementById("reset").onclick = function reset() {
-    document.getElementById("greeting").textContent = "Let's play again!";
-    document.getElementById("output").textContent = '';
-};
-
-document.getElementById("form").onsubmit = function greetUser(submit) {
-    submit.preventDefault();
-
+// Event listener for the form submission
+const form = document.getElementById("name-form");
 form.addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
@@ -39,5 +33,16 @@ form.addEventListener("submit", function(event) {
         outputList.appendChild(listItem);
     }
 });
+
+// Event listener for the reset button
+document.getElementById("reset").onclick = function() {
+    // Reset the greeting and clear the output list
+    document.getElementById("greeting").textContent = "Let's play again!";
+    document.getElementById("output").innerHTML = ''; // Clear the output list
+    // Clear the form fields
+    document.getElementById("first-name").value = '';
+    document.getElementById("middle-initial").value = '';
+    document.getElementById("last-name").value = '';
+};
 
 
