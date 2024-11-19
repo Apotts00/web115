@@ -3,7 +3,7 @@ document.getElementById("reset").onclick = function reset() {
     document.getElementById("output").textContent = '';
 };
 
-document.getElementById("form").onsubmit = function greetUser(submit) {
+document.getElementById("name-form").onsubmit = function greetUser(submit) {
     submit.preventDefault();
 
     const firstName = document.getElementById("first-name").value;
@@ -17,14 +17,15 @@ document.getElementById("form").onsubmit = function greetUser(submit) {
     const fullName = middleInitial ? `${firstName} ${middleInitial}. ${lastName}` : `${firstName} ${lastName}`;
     
     const greetingElement = document.getElementById("greeting");
-    greetingElement.textContent = `Welcome to Forever Friends, ${fullName}!`;
+    greetingElement.textContent = `Welcome to Forever Friends!, ${fullName}!`;
 
     
     const output = document.getElementById('output');
-    const word3 = 'It's';
-    const word5 = 'All';
-	const mainword ='Love';
-    const countLimit = 150;
+    output.textContent = '';
+    const word3 = 'My';
+    const word5 = 'Forever';
+	const mainword ='Friend';
+    const countLimit = 140;
 
     for (let count = 1; count <= countLimit; count++) {
         let listItem = document.createElement('li');
