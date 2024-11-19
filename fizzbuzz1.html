@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adrienne Potts Love's Forever Friends Soft Play | FizzBuzz1</title>
-     <link rel="stylesheet" href="styles/default.css">
-	<script src="scripts/fizzbuzz0.js" defer></script>
-	<script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
+    <title>Adrienne Potts Love's Forever Friends Soft Play | FizzBuzz0</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="scripts/fizzbuzz0.js" defer></script>
+    <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
 </head>
 <body>    
 <div data-include="components/header.html"></div>
 
-	<main>
-			<h2>Fizz Buzz 1</h2>
-			<h3 id="greeting">Welcome to Forever Friends Soft Play</h3>
-			<form id="form">
-				<fieldset class="name">
-					<legend>Please enter your name.</legend>
-					<label for="first-name">First Name</label><br>
-					<input id="first-name" placeholder=" First Name" required><br>
-					<br>
-					<label for="middle-initial">Middle Initial</label><br>
-					<input id="middle-initial" placeholder=" Middle Initial" maxlength="1" ><br>
-					<br>
-					<label for="last-name">Last Name</label><br>
-					<input id="last-name" placeholder=" Last Name" required><br>
-					<br>
-					<div class="buttons">
-						<button id="submit" type="submit">Submit</button>
-						<button id="reset" type="reset">Reset</button>
-					</div>
-				</fieldset>
-			</form>
-			<ul class="loop" id="output"></ul>
-			
-		</main>
+<main>
+    <h2>Fizz Buzz 0</h2>
+    <h3 id="greeting">Welcome to Forever Friends Soft Play</h3>
+    <form id="name-form">
+        <fieldset class="name">
+            <legend>Please enter your name.</legend>
+            <label for="first-name">First Name</label><br>
+            <input id="first-name" type="text" placeholder="First Name" required><br><br>
+
+            <label for="middle-initial">Middle Initial</label><br>
+            <input id="middle-initial" type="text" placeholder="Middle Initial" maxlength="1"><br><br>
+
+            <label for="last-name">Last Name</label><br>
+            <input id="last-name" type="text" placeholder="Last Name" required><br><br>
+
+            <div class="buttons">
+                <button id="submit" type="submit">Submit</button>
+                <button id="reset" type="reset">Reset</button>
+            </div>
+        </fieldset>
+    </form>
+    <ul class="loop" id="output"></ul>
+</main>
+
 <div data-include="components/footer.html"></div>  
-  <script src="scripts/HTMLInclude.js"></script>
+<script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>
