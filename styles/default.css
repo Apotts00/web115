@@ -37,6 +37,10 @@ h3 {
 	font-size: 25px; 
 	color: #21dcd9;;
 }
+
+h3 img {
+	float:left;
+}
 ul, li { 
 	list-style-type: disc; 
 	padding: 0; 
