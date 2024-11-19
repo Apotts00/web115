@@ -19,6 +19,12 @@ header, footer {
 	text-decoration: none;
 }
 
+header img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
 a:hover { 
 	background-color: blue; 
 	color: white;
@@ -114,12 +120,6 @@ form {
 	width: 80%;
 	margin-right: 100px; 
 	margin-left: 100px;
-}
-
-header img {
-	 float: right;
-	max-height: 50px; 
-	width: auto; 
 }
 
 @media (max-width: 768px) {
