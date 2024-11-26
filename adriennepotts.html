@@ -8,93 +8,60 @@
 	<script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
     <style>
         /* Embedded Stylesheet */
-
-        /* Universal reset */
-        * {
+ <style>
+       body {
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9; /* Light grey background */
+            background-color: #000000;
+            color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
+            text-align: center;
+       }
+	    
+	h1 {
+            font-size: 24px;
+            margin: 15px 0;
+            color: #ffffff;
         }
-
+        
         .card {
             width: 90%;
             max-width: 400px;
-            background-color: #333; /* Dark background for the card */
-            color: #fff; /* White text for contrast */
+            background-color: black;
             border-radius: 15px;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
-            padding: 30px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
         }
 
         .profile-pic {
             width: 120px;
             height: 120px;
-            border-radius: 50%;
+            border-radius: 75%;
             object-fit: cover;
-            border: 4px solid #fff; /* White border around the profile picture */
-            margin-bottom: 20px;
+            border: 3px solid #ffffff;
         }
 
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #FFD700; /* Golden color for the name */
+       card p {
+            margin: 10px 0;
+            line-height: 1.6;
         }
 
-        p.title {
-            font-size: 1.2rem;
-            font-weight: normal;
-            color: #bbb; /* Lighter text for the title */
-            margin-bottom: 20px;
-        }
-
-        p.description {
-            font-size: 1rem;
-            margin-bottom: 20px;
-            font-style: italic;
-            color: #ddd;
+        .links {
+            margin-top: 20px;
         }
 
         .links a {
             text-decoration: none;
-            color: #FFD700; /* Golden color for links */
+            color: #ffffff;
             font-weight: bold;
-            margin: 5px 0;
-            display: inline-block;
+            margin: 0 10px;
         }
 
         .links a:hover {
             text-decoration: underline;
-            color: #fff; /* Hover effect for links */
-        }
-
-        /* Ensure no scrolling */
-        html, body {
-            height: 100%;
-        }
-        .card {
-            height: 100%; /* Full height for the card */
-        }
-
-        /* Make sure the card is centered both vertically and horizontally */
-        .card-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
     </style>
 </head>
