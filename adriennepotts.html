@@ -3,66 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="styles/default.css" rel="stylesheet" type="text/css">
-	<title>Adrienne Potts Love's Forever Friends Soft Play | Business Card</title>
-	<link rel="icon" type="image/x-icon" href="images/favicon2.png">
-	<script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>	
-</head>
-	
- <style>
+    <title>Adrienne Potts Love | Business Card</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
         /* Embedded Stylesheet */
-        
-    .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    text-align: center;
-    width: 50%;
-    background-color: black;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    }    
- 
+
+        /* Universal reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9; /* Light grey background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 400px;
+            background-color: #333; /* Dark background for the card */
+            color: #fff; /* White text for contrast */
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
         .profile-pic {
             width: 120px;
             height: 120px;
-            border-radius: 75%;
+            border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #ffffff;
+            border: 4px solid #fff; /* White border around the profile picture */
+            margin-bottom: 20px;
         }
 
-        .links {
-            margin-top: 20px;
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #FFD700; /* Golden color for the name */
+        }
+
+        p.title {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: #bbb; /* Lighter text for the title */
+            margin-bottom: 20px;
+        }
+
+        p.description {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #ddd;
         }
 
         .links a {
             text-decoration: none;
-            color: #ffffff;
+            color: #FFD700; /* Golden color for links */
             font-weight: bold;
-            margin: 0 10px;
+            margin: 5px 0;
+            display: inline-block;
         }
 
         .links a:hover {
             text-decoration: underline;
+            color: #fff; /* Hover effect for links */
         }
-    </style>	
-	
+
+        /* Ensure no scrolling */
+        html, body {
+            height: 100%;
+        }
+        .card {
+            height: 100%; /* Full height for the card */
+        }
+
+        /* Make sure the card is centered both vertically and horizontally */
+        .card-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
 <body>
-    <div data-include="components/header.html"></div>
-    <div class="card">
-        <img src="images/alove2.jpg" alt="Adrienne Potts Love" class="profile-pic">
-        <h1>Adrienne Potts Love</h1>
-        <p>Full Stack Developer</p>
-        <p>"Crafting seamless solutions, from code to cloud."</p>
-        <div class="links">
-            <a href="tel:+9802489417">Call Me</a>
-            <a href="mailto:apotts002@gmail.com">Email Me</a>
-            <a href="https://www.linkedin.com/in/adrienne-potts/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Apotts00" target="_blank">GitHub</a>
+    <div class="card-wrapper">
+        <div class="card">
+            <img src="images/alove2.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>First Last</h1>
+            <p class="title">Full Stack Developer</p>
+            <p class="description">"Turning ideas into reality with code."</p>
+            <div class="links">
+                <a href="tel:+19802489417">Call Me</a>
+                <a href="mailto:apotts002@gmail.com">Email Me</a>
+                <a href="https://www.linkedin.com/in/adrienne-potts/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Apotts00" target="_blank">GitHub</a>
+            </div>
         </div>
     </div>
-	<div data-include="components/footer.html"></div>
-	<script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>
