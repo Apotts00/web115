@@ -106,7 +106,7 @@ a {
     text-align: left;
 }
 
-form {
+body form {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -144,4 +144,10 @@ h1 img:nth-child(2) {
   header .logo img {
     max-height: 40px; 
   }
+}
+body card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
