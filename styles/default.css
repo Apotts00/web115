@@ -101,6 +101,15 @@ a {
 	text-align: left;
 }
 
+body form{
+    display: flex;
+    justify-content: center; /* Centers the form horizontally */
+    align-items: center;     /* Centers the form vertically */
+    height: 100vh;           /* Full viewport height */
+    margin: 0;               /* Remove default margin */
+    font-family: Arial, sans-serif; /* Optional: Set a font */
+}
+
 form {
     display: flex;
     flex-direction: column;  
