@@ -92,8 +92,8 @@ a {
 }
 
 #output {
-    list-style-type: none; /* Removes the bullets */
-    padding-left: 0; /* Optional: removes left padding that may still create indentation */
+    list-style-type: none; 
+    padding-left: 0; 
 }
 
 #output li {
@@ -101,7 +101,7 @@ a {
 }
 
 #output li::before {
-    content: counter(item) ". "; /* This will add the number before the text */
+    content: counter(item) ". "; 
 }
 
 .loop ul {
@@ -109,14 +109,40 @@ a {
 	text-align: left;
 }
 
-body form {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	width: 80%;
-	margin-right: 100px; 
-	margin-left: 100px;
+form {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;    
+    padding: 20px;
+    border: 1px solid #ccc;  
+    border-radius: 8px;      
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;  
+    width: 300px;            
+}
+
+input, button {
+    margin: 8px 0;           
+    padding: 8px;
+    width: 100%;             
+    box-sizing: border-box;  
+}
+
+button {
+    cursor: pointer;       
+    background-color: #4CAF50;
+    color: white;            
+    border: none;           
+    border-radius: 4px;      
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    text-align: center;      
 }
 h1 img {
 	float: left;
