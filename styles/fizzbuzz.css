@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #550578;
@@ -9,63 +10,68 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 100vh;
+    min-height: 100vh; /* Ensures full height even if content is smaller */
+    flex-direction: column;
 }
 
+/* Header & Footer */
 header, footer {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 15px; 
-    color: white; 
+    font-size: 15px;
+    color: white;
     text-decoration: none;
 }
 
-a:hover { 
-    background-color: blue; 
+a:hover {
+    background-color: blue;
     color: white;
 }
 
 h1 {
     color: #21dcd9;
-    font-size: 45px; 
+    font-size: 45px;
+    margin-top: 0;
 }
 
+/* Main content */
 h2 {
-    text-align: center;    
-    font-size: 35px; 
+    text-align: center;
+    font-size: 35px;
     color: #ffffff;
 }
 
 h3 {
-    text-align: center;    
-    font-size: 25px; 
+    text-align: center;
+    font-size: 25px;
     color: #21dcd9;
 }
 
-p { 
-    font-size: 150%; 
-    margin-right: 100px; 
-    margin-left: 100px; 
+p {
+    font-size: 150%;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
-p em { 
-    text-align: center; 
-}    
+p em {
+    text-align: center;
+}
 
-nav { 
-    font-size: 25px; 
-    text-align: center;  
-    box-shadow:0 0 5px 3px #c353f4; 
-    border-radius: 15px; 
-    padding: 7px; 
-    display: block; 
-    max-width: -50px;
-} 
+/* Navigation */
+nav {
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 0 0 5px 3px #c353f4;
+    border-radius: 15px;
+    padding: 7px;
+    display: block;
+}
 
-fieldset {
+/* Form Styles */
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,14 +80,18 @@ fieldset {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    max-width: 300px;
+    width: 100%;
+    max-width: 350px; /* Increased form width */
+    margin-top: 20px;
 }
 
+/* Inputs and Buttons */
 input, button {
     margin: 8px 0;
-    padding: 8px;
+    padding: 10px;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 4px;
 }
 
 button {
@@ -89,7 +99,6 @@ button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
@@ -97,22 +106,28 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Output List */
 #output {
-    list-style-type: none; 
+    list-style-type: none;
     padding-left: 0;
-    counter-reset: list-counter; 
+    counter-reset: list-counter;
     margin-top: 20px;
+    width: 100%;
+    max-width: 350px;
+    text-align: left; /* Align text to the left */
 }
 
 #output li {
-    counter-increment: list-counter; 
+    counter-increment: list-counter;
     position: relative;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 #output li::before {
-    content: counter(list-counter) ". "; 
+    content: counter(list-counter) ". ";
     position: absolute;
-    left: -30px; 
+    left: -35px; /* Adjust positioning for better alignment */
 }
 
 h1 img {
@@ -124,6 +139,7 @@ h1 img:nth-child(2) {
     float: right;
 }
 
+/* Media Queries */
 @media (max-width: 1150px) {
     header {
         padding: 10px;
@@ -133,19 +149,54 @@ h1 img:nth-child(2) {
     }
 }
 
-@media (max-width: 600px) {
-    header {
-        padding: 10px;
-        font-size: 1em;
+@media (max-width: 768px) {
+    body {
+        margin: 0 20px;
     }
-    h1 img {
-        height: 70px;
+
+    form {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    input, button {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    #output {
+        max-width: 100%;
     }
 }
 
-@media (max-width: 768px) {
-    header .logo img {
-        max-height: 40px;
+@media (max-width: 600px) {
+    header {
+        padding: 5px;
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    input, button {
+        font-size: 16px;
     }
 }
+
 
