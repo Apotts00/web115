@@ -23,6 +23,18 @@ header, footer {
     text-decoration: none;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #550578;
+    max-width: 300px;
+}
+
 a:hover { 
     background-color: blue; 
     color: white;
