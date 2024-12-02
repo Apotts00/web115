@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Ensures full height even if content is smaller */
+    min-height: 100vh; 
     flex-direction: column;
 }
 
@@ -167,18 +167,6 @@ h1 img:nth-child(2) {
         padding: 12px;
     }
 
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    h3 {
-        font-size: 22px;
-    }
-
     #output {
         max-width: 100%;
     }
@@ -188,10 +176,6 @@ h1 img:nth-child(2) {
     header {
         padding: 5px;
         font-size: 1em;
-    }
-
-    h1 {
-        font-size: 30px;
     }
 
     form {
