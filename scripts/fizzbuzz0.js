@@ -26,9 +26,9 @@ form.addEventListener("submit", function(event) {
         const listItem = document.createElement("li");
         // Add even/odd message
         if (i % 2 === 0) {
-            listItem.textContent = `Forever - the number is even`;
+            listItem.textContent = `Forever Friend - the number is even`;
         } else {
-            listItem.textContent = `Friend - the number is odd`;
+            listItem.textContent = `Forever Friend - the number is odd`;
         }
         outputList.appendChild(listItem);
     }
