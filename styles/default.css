@@ -119,7 +119,7 @@ body form{
     font-family: Arial, sans-serif; 
 }
 
-form {
+fieldset {
     display: flex;
     flex-direction: column;  
     padding: 20px;
