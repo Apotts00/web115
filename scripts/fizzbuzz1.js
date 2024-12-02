@@ -22,7 +22,6 @@ document.getElementById("name-form").onsubmit = function greetUser(submit) {
     
     const output = document.getElementById('output');
     output.textContent = '';
-    const word3 = 'My';
     const word5 = 'Forever';
 	const mainword ='Friend';
     const countLimit = 140;
