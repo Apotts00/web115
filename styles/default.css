@@ -115,11 +115,11 @@ a {
 
 body form{
     display: flex;
-    justify-content: center; /* Centers the form horizontally */
-    align-items: center;     /* Centers the form vertically */
-    height: 100vh;           /* Full viewport height */
-    margin: 0;               /* Remove default margin */
-    font-family: Arial, sans-serif; /* Optional: Set a font */
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    margin: 0;              
+    font-family: Arial, sans-serif; 
 }
 
 form {
