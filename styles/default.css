@@ -93,7 +93,19 @@ a {
 
 #output {
     list-style-type: none; 
-    padding-left: 0; 
+    padding-left: 0;
+    counter-reset: list-counter; 
+}
+
+#output li {
+    counter-increment: list-counter; 
+    position: relative;
+}
+
+#output li::before {
+    content: counter(list-counter) ". "; 
+    position: absolute;
+    left: -30px; 
 }
 
 .loop ul {
