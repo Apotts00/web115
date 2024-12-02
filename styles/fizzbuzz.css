@@ -23,7 +23,7 @@ header, footer {
     text-decoration: none;
 }
 
-form {
+fieldset {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,6 +33,10 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #550578;
     max-width: 300px;
+}
+
+fieldset:first-of-type {
+	margin-top: 0;
 }
 
 a:hover { 
@@ -155,17 +159,6 @@ h1 img:nth-child(2) {
     }
 }
 
-fieldset {
-	width: 30ch;
-	margin: 1ch auto;
-	box-sizing: border-box;
-	border: 3px solid #aaa;
-}
-
-fieldset:first-of-type {
-	margin-top: 0;
-}
-
 main nav {
 	margin-top: 0;
 }
@@ -191,33 +184,3 @@ label:first-of-type {
 	padding-bottom: .5ch;
 }
 
-#output {
-	list-style-type: none;
-	padding: 2ch 1.5ch 0;
-	display: flex;
-	flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-	max-width: 800px;
-	margin: auto 25%;
-	color: #c5ffff;
-	max-height: 110ch;
-}
-
-#output2 {
-	list-style-type: none;
-	padding: 2ch 1.5ch 0;
-	max-width: 800px;
-	margin: auto;
-	color: #c5ffff;
-}
-
-.fizzbuzz0 li {
-    width: 35ch;
-    text-align: left;
-}
-
-.fizzbuzz1 li, .fizzbuzz2 li, .fizzbuzz3 li {
-	width: 25ch;
-	text-align: left;
-}
