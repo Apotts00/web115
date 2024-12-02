@@ -96,14 +96,6 @@ a {
     padding-left: 0; 
 }
 
-#output li {
-    counter-increment: item;
-}
-
-#output li::before {
-    content: counter(item) ". "; 
-}
-
 .loop ul {
 	width: 35ch;
 	text-align: left;
