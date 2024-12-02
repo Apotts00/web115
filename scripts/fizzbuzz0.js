@@ -26,9 +26,9 @@ form.addEventListener("submit", function(event) {
         const listItem = document.createElement("li");
         // Add even/odd message
         if (i % 2 === 0) {
-            listItem.textContent = `${i}. Forever - the number is even`;
+            listItem.textContent = `Forever - the number is even`;
         } else {
-            listItem.textContent = `${i}. Friend - the number is odd`;
+            listItem.textContent = `Friend - the number is odd`;
         }
         outputList.appendChild(listItem);
     }
@@ -44,5 +44,6 @@ document.getElementById("reset").onclick = function() {
     document.getElementById("middle-initial").value = '';
     document.getElementById("last-name").value = '';
 };
+
 
 
