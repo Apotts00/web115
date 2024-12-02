@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 300px;
+}
+
+input, button {
+    margin: 8px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    text-align: center;
+}
+
+#output {
+    list-style-type: none; 
+    padding-left: 0;
+    counter-reset: list-counter;
+}
+
+#output li {
+    counter-increment: list-counter; 
+    position: relative;
+}
+
+#output li::before {
+    content: counter(list-counter) ". "; 
+    position: absolute;
+    left: -30px; 
+}
