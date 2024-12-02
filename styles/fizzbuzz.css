@@ -70,6 +70,11 @@ nav {
     display: block;
 }
 
+a {
+	color: #ffffff; 
+	text-decoration: none;
+}
+
 /* Form Styles */
 form {
     display: flex;
