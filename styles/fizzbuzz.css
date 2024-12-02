@@ -45,6 +45,26 @@ h3 {
 	color: #21dcd9;;
 }
 
+p { 
+	font-size: 150%; 
+	margin-right: 100px; 
+	margin-left: 100px; 
+} 
+
+p em { 
+	text-align: center; 
+}	 
+
+nav { 
+	font-size: 25px; 
+	text-align: center;  
+	box-shadow:0 0 5px 3px #c353f4; 
+	border-radius: 15px; 
+	padding: 7px; 
+	display: block; 
+	max-width: -50px;
+} 
+
 form {
     display: flex;
     flex-direction: column;
@@ -92,4 +112,35 @@ button:hover {
     content: counter(list-counter) ". "; 
     position: absolute;
     left: -30px; 
+}
+
+h1 img {
+	float: left;
+	margin-top: -10px;
+}
+h1 img:nth-child(2) {
+	float: right;
+}
+
+@media (max-width: 1150px) {
+  header {
+	padding: 10px;
+ }
+  h1 img {
+	height: 70px;
+  }
+}
+@media (max-width: 600px) {
+  header {
+	padding: 10px;
+	font-size: 1em;
+ }
+  h1 img {
+	height: 70px;
+  }
+}
+@media (max-width: 768px) {
+  header .logo img {
+	max-height: 40px; 
+  }
 }
